@@ -5,7 +5,7 @@ public class Main{
         Calculator calculator = new Calculator();
 
         calculator.setVisible(true);
-        calculator.setDefaultCloseOperation(Calculator.EXIT_ON_CLOSE);
+        calculator.setDefaultCloseOperation(calculator.EXIT_ON_CLOSE);
 
     }
 }
