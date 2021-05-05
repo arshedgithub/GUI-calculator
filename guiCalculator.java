@@ -14,11 +14,21 @@ public class guiCalculator{
         frame.setTitle("Calculator");
         frame.setLocation(100,250);
         frame.setSize(500,300);
-
-        frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
-
+        
         Container container = frame.getContentPane(); 
-
+        
+        FlowLayout layout = new FlowLayout();
+        container.setLayout(layout);
+        
+        JTextField txtName = new JTextField(20);
+        JButton btnShow = new JButton("Show");
+        JLabel lblDisplay = new JLabel("Type and Click");
+        
+        container.add(txtName);
+        container.add(btnShow);
+        container.add(lblDisplay);
+        
+        frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 
     }
